@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAF CART</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+</head>
+<body class="font-sans">
+    <div>
+        <div class="bg-white-100 p-2 text-sm flex justify-between items-center">
+          <div class="text-gray-600">rafcart@support.com</div>
+          <div class="flex space-x-3">
+            <div><a href="#">Track My Order</a></div>
+            <div><a href="#">Login/Register</a></div>
+            <div><a href="#">Language</a></div>
+            <div><a href="#">Currency</a></div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+     <header class="bg-white shadow">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="text-2xl font-bold text-red-500">RAF<span class="text-black">CART</span></div>
+
+        <div class="flex items-center">
+          <select class="border rounded-l-md border-red-500 px-4 py-2 text-gray-600">
+          <option value="">All category</option>
+          <option value="">Mywish</option>
+        </select>
+        <input type="text" placeholder="Search product..." class="w-full border border-gray-300 px-4 py-2">
+        <button class="bg-red-600 border rounded-r-md px-4 py-2">Search</button>
+        </div>
+
+        <div class="flex space-x-4 items-center">
+          <a href="#" class="relative">
+            <span class="fa-regular fa-heart text-gray-600 fa-2x"></span><br>
+            <span class="text-sm text-gray-600">wish list</span>
+            <!-- <span class="bg-red-600 absolute text-xs flex justify-center right-0 top-0 left-4 text-white w-5 h-5 rounded-full">6</span> -->
+             <span class="absolute top-0 right-0 left-7 bg-red-600 rounded-full text-white text-center text-xs">6</span>
+          </a>
+          <a href="#" class="relative">
+            <span class="fa-solid fa-cart-shopping text-gray-600 fa-2x"></span><br>
+            <span class="text-sm text-gray-600">cart</span>
+            <span class="bg-red-600 absolute text-xs flex justify-center right-0 top-0 left-4 text-white w-5 h-5 rounded-full">6</span>
+          </a>
+          <a href="#">
+              <span class="fa-solid fa-user text-gray-600 fa-2x"></span><br>
+            <span class=" text-gray-600 text-sm">Account</span>
+          </a>
+        </div>
+      </div>
+
+      <nav class="bg-black text-white">
+        <div class="container flex">
+          <div class="p-4 bg-red-600 relative group hover:cursor-pointer">
+            <i class="fa fa-bars"></i>
+            <span>All category</span>
+          <div class="group-hover:block w-full absolute py-2 hidden divide-gray-400 text-black shadow-lg">
+            <a href="#" class="flex py-4 px-4 space-x-3 ">
+              <i class="fa-solid fa-shoe-prints"></i>
+              <span class="hover:text-blue-300">Shoes</span>
+            </a>
+            <a href="#" class="flex py-4 px-4 space-x-3">
+            <i class="fa-solid fa-shoe-prints"></i>
+            <span class="hover:text-blue-300">Shoes</span>
+            </a>
+
+        <a href="#" class="flex py-4 px-4 space-x-3">
+          <span class="text-gray-800 font-medium">Computers</span>
+        </a>
+
+        <div class="absolute top-full left-0 w-64 p-5 bg-white border border-gray-300 shadow-lg hidden group-hover:block">
+          <div class="mb-4">
+             <h1>Hot Sale</h1>
+             <ul class="space-y-1 text-gray-600">
+              <li>Shoes</li>
+              <li>Shorts</li>
+              <li>Shirts</li>
+              <li>Pants</li>
+             </ul>
+          </div>
+
+          <div>
+            <h1 class="font-semibold text-lg mb-2">Top Picks</h1>
+            <ul class="space-y-1 text-gray-600">
+              <li>Sneakers</li>
+              <li>Jackets</li>
+              <li>Socks</li>
+              <li>Caps</li>
+            </ul>
+          </div>
+
+        </div>
+        </div>
+          </div>
+
+          <div class="flex justify-between flex-1 p-4">
+            <div class="space-x-2 flex">
+              <div class="relative group">
+              <a href="#">Home <i class="fa fa-arrow-down"></i></a>
+              <div class="absolute left-0 mt-4 bg-white shadow-lg rounded-lg p-4 hidden group-hover:block">
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 whitespace-nowrap">Sub Link 1</a>
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 whitespace-nowrap">Sub Link 2</a>
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 whitespace-nowrap">Sub Link 3</a>
+              </div>
+            </div>
+            <div class="relative group">
+              <a href="#">Shop <i class="fa fa-arrow-down"></i></a>
+              <div class="absolute left-0 mt-4 bg-white shadow-lg rounded-lg p-4 hidden group-hover:block">
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 whitespace-nowrap">Sub Link 1</a>
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 whitespace-nowrap">Sub Link 2</a>
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 whitespace-nowrap">Sub Link 3</a>
+              </div>
+            </div>
+            <div class="relative group">
+              <a href="#">Contact <i class="fa fa-arrow-down"></i></a>
+              <div class="absolute left-0 mt-4 bg-white shadow-lg rounded-lg p-4 hidden group-hover:block">
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 whitespace-nowrap">Sub Link 1</a>
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 whitespace-nowrap">Sub Link 2</a>
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 whitespace-nowrap">Sub Link 3</a>
+              </div>
+            </div>
+            </div>
+          </div>
+
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>call + 987654321</span>
+          </div>
+        </div>
+      </nav>
+     </header>
+   
+
+     <div class="bg-cover bg-center bg-no-repeat bg-[url('/images/banner-1.jpg')]">
+      <div class="container">
+        <div class="text-5xl font-semibold pt-16">Best Collection for<br />Home Decoration</div>
+        <div class="text-gray-500 py-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /> Vulputate
+            rhoncus pellentesque id integer neque,<br /> vel accumsan dolor diam.</div>
+        <div class="pb-12"><button class="bg-red-500 p-3 text-white rounded-md">Shop Now</button></div>`
+    </div>
+    </div>
+
+    <div class="grid grid-cols-3 mt-10">
+      <div class="flex items-center gap-3 border border-red-500 px-4 py-4 mx-6  my-6 rounded-md ">
+        <img src="./images/delivery-van.svg" alt="" class="hover:h-10">
+        <div>
+          <h4>Free Shipping</h4>
+          <p>Orders Over $200</p>
+        </div>
+      </div>
+      <div class="flex gap-3 border border-red-500 px-4 py-4 mx-6  my-6 rounded-md ">
+        <img src="./images/delivery-van.svg" alt="" class="hover:h-10">
+        <div>
+          <h4>Free Shipping</h4>
+          <p>Orders Over $200</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 border border-red-500 px-4 py-4 mx-6  my-6 rounded-md ">
+        <img src="./images/delivery-van.svg" alt="" class="hover:h-10">
+        <div>
+          <h4>Free Shipping</h4>
+          <p>Orders Over $200</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="grid grid-cols-2 gap-10">
+      <div class="flex justify-between border border-gray-300 mx-4 my-4 px-4 py-4 items-center bg-red-100">
+        <div class="flex flex-col p-5">
+          <div class="text-red-600 font-bold">30% Offer</div>
+          <div class="text-2xl text-black font-semibold">Free Shipping</div>
+          <div>Attractive Nature Furniture</div><br>
+          <div><button class="border border-gray-600 px-3 py-3 rounded-md text-white bg-red-600">SHOP NOW</button></div>
+        </div>
+        <img src="./images/sofa-1.png" alt="" class="w-40 hover:scale-110">
+      </div>
+      <div class="flex justify-between border border-gray-300 mx-4 my-4 px-4 py-4 items-center bg-red-100">
+        <div class="flex flex-col p-5">
+          <div class="text-red-600 font-bold">30% Offer</div>
+          <div class="text-2xl text-black font-semibold">Free Shipping</div>
+          <div>Attractive Nature Furniture</div><br>
+          <div><button class="border border-gray-600 px-3 py-3 rounded-md text-white bg-red-600">SHOP NOW</button></div>
+        </div>
+        <img src="./images/sofa-2.png" alt="" class="w-40 hover:scale-110">
+      </div>
+    </div>
+
+    <div class="m-10">
+      <h1 class="text-3xl py-4 font-semibold">SHOP BY CATEGORY</h1>
+      <div class="grid grid-cols-3 gap-2">
+        <div class="relative group">
+          <img src="./images/category-1.jpg" alt="">
+          <span class="absolute top-0 right-0 bottom-0 left-0 flex items-center justify-center bg-black text-white bg-opacity-40">Bedroom <span class="hidden group-hover:block"><i class="fa fa-arrow-right"></i></span></span>
+        </div>
+        <div class="relative group">
+          <img src="./images/category-3.jpg" alt="">
+          <span class="absolute top-0 right-0 bottom-0 left-0 flex items-center justify-center bg-black text-white bg-opacity-40">Bedroom <span class="hidden group-hover:block"><i class="fa fa-arrow-right"></i></span></span>
+        </div>
+        <div class="relative group">
+          <img src="./images/category-2.jpg" alt="">
+          <span class="absolute top-0 right-0 bottom-0 left-0 flex items-center justify-center bg-black text-white bg-opacity-40">Bedroom <span class="hidden group-hover:block"><i class="fa fa-arrow-right"></i></span></span>
+        </div>
+        <div class="relative group">
+          <img src="./images/category-2.jpg" alt="">
+          <span class="absolute top-0 right-0 bottom-0 left-0 flex items-center justify-center bg-black text-white bg-opacity-40">Bedroom <span class="hidden group-hover:block"><i class="fa fa-arrow-right"></i></span></span>
+        </div>
+        <div class="relative group">
+          <img src="./images/category-1.jpg" alt="">
+          <span class="absolute top-0 right-0 bottom-0 left-0 flex items-center justify-center bg-black text-white bg-opacity-40">Bedroom <span class="hidden group-hover:block"><i class="fa fa-arrow-right"></i></span></span>
+        </div>
+        <div class="relative group">
+          <img src="./images/category-3.jpg" alt="">
+          <span class="absolute top-0 right-0 bottom-0 left-0 flex items-center justify-center bg-black text-white bg-opacity-40">Bedroom <span class="hidden group-hover:block"><i class="fa fa-arrow-right"></i></span></span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container pt-8">
+      <div class="text-xl font-bold pb-3 rounded-md">Top new arrival</div>
+    <div class="grid grid-cols-4 gap-3">
+      <div>
+
+        <div class="relative w-30 group">
+          <!-- Image container with pseudo-element for overlay -->
+          <div class="relative">
+            <img src="./images/product9.jpg" class="w-full" alt="No image">
+            <div class="absolute inset-0 bg-black bg-opacity-50 hidden group-hover:block"></div>
+          </div>
+          
+          <!-- Heart icon -->
+          <i class="fa-regular fa-heart text-red-500 text-xl absolute top-2 right-2 color-red bg-white rounded-2xl p-1"></i>
+        
+          <!-- Discount Badge -->
+          <span class="bg-green-600 p-1 rounded-sm text-white absolute top-2 left-2">25%</span>
+        
+          <!-- Quick View Toggle Checkbox (Hidden) -->
+          <input type="checkbox" id="quickViewToggle" class="peer hidden">
+          
+          <!-- Quick View Button -->
+          <label for="quickViewToggle" class="absolute bottom-0 text-center left-0 w-full h-10 bg-black text-white p-1 hidden group-hover:block rounded-b-lg cursor-pointer">
+            <i class="fa-solid fa-eye"></i> Quick View
+          </label>
+        </div>
+        
+        <!-- Quick View Modal -->
+        <div class="fixed inset-0 bg-gray-900 bg-opacity-50 items-center justify-center hidden peer-checked:flex">
+          <div class="bg-white w-96 p-6 rounded-lg relative">
+            <!-- Close Button -->
+            <label for="quickViewToggle" class="absolute top-2 right-2 text-gray-600 hover:text-red-500 text-2xl cursor-pointer">&times;</label>
+            <h2 class="text-xl font-bold">MEN'S ADIDAS COURTSMASH</h2>
+            <p class="text-green-500 font-semibold">Availability: In Stock</p>
+            <p>Brand: Bata</p>
+            <p>Category: Clothing</p>
+            <p>SKU: BE45VGRT</p>
+            <p class="text-lg"><del class="text-gray-500">$5000.00</del> <span class="text-red-500 font-bold">$4500.00</span> <span class="bg-red-500 text-white px-2 py-1 rounded">-30%</span></p>
+            <img src="https://via.placeholder.com/300" class="w-full mt-4 rounded-lg">
+          </div>
+        </div>
+        
+        
+        <div class="p-1 ml-3">GUYER ChAIR</div>
+        <div class="p-1 ml-3">Queen Headboard</div>
+        <div class="p-1 ml-3">
+          <span>$45.00</span><br>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+        </div>
+        <div><button class="w-full text-white bg-red-500">ADD TO CART</button></div>
+      </div>
+      <div>
+        <div class="relative w-30">
+          <img src="./images/product9.jpg" class="w-full" alt="No image">
+          <i class="fa-regular fa-heart text-red-500 text-xl absolute top-2 right-2 cursor-pointer"></i>
+        </div>
+        <div class="p-1 ml-3">GUYER ChAIR</div>
+        <div class="p-1 ml-3">Queen Headboard</div>
+        <div class="p-1 ml-3">
+          <span>$45.00</span><br>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+        </div>
+        <div><button class="w-full text-white bg-red-500">ADD TO CART</button></div>
+      </div>
+      <div>
+        <div class="relative w-30">
+          <img src="./images/product9.jpg" class="w-full" alt="No image">
+          <i class="fa-regular fa-heart text-red-500 text-xl absolute top-2 right-2 cursor-pointer"></i>
+        </div>
+        <div class="p-1 ml-3">GUYER ChAIR</div>
+        <div class="p-1 ml-3">Queen Headboard</div>
+        <div class="p-1 ml-3">
+          <span>$45.00</span><br>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+        </div>
+        <div><button class="w-full text-white bg-red-500">ADD TO CART</button></div>
+      </div>
+      <div>
+        <div class="relative w-30">
+          <img src="./images/product9.jpg" class="w-full" alt="No image">
+          <i class="fa-regular fa-heart text-red-500 text-xl absolute top-2 right-2 cursor-pointer"></i>
+        </div>
+        <div class="p-1 ml-3">GUYER ChAIR</div>
+        <div class="p-1 ml-3">Queen Headboard</div>
+        <div class="p-1 ml-3">
+          <span>$45.00</span><br>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+        </div>
+        <div><button class="w-full text-white bg-red-500">ADD TO CART</button></div>
+      </div>
+    </div>
+    </div>
+    <div class="container w-full">
+      <img src="./images/offer-mobile.jpg" alt="No image" class="pt-6 pb-6 h-[300px]">
+    </div>
+    <!--Products-->
+    <div class="container pt-10 pb-7">
+      <div class="text-xl font-bold pb-3 rounded-md">Top new arrival</div>
+    <div class="grid grid-cols-4 gap-3">
+      <div>
+        <div class="relative w-30 group">
+          <img src="./images/product9.jpg" class="w-full" alt="No image">
+          <i class="fa-regular fa-heart text-red-500 text-xl absolute top-2 right-2 color-red bg-white rounded-2xl p-1"></i>
+          <span class="bg-green-600 p-1 rounded-sm text-white absolute top-2 left-2">25%</span>
+          <button class="absolute bottom-0 left-0 w-full h-10 bg-black opacity-7 text-white p-1 hidden group-hover:block rounded-b-lg ">
+            <i class="fa-solid fa-eye"></i> Quick View
+          </button>
+        </div> 
+        
+        <div class="p-1 ml-3">GUYER ChAIR</div>
+        <div class="p-1 ml-3">Queen Headboard</div>
+        <div class="p-1 ml-3">
+          <span>$45.00</span><br>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+        </div>
+        <div><button class="w-full text-white bg-red-500">ADD TO CART</button></div>
+      </div>
+      <div>
+        <div class="relative w-30">
+          <img src="./images/product9.jpg" class="w-full" alt="No image">
+          <i class="fa-regular fa-heart text-red-500 text-xl absolute top-2 right-2 cursor-pointer"></i>
+        </div>
+        <div class="p-1 ml-3">GUYER ChAIR</div>
+        <div class="p-1 ml-3">Queen Headboard</div>
+        <div class="p-1 ml-3">
+          <span>$45.00</span><br>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+        </div>
+        <div><button class="w-full text-white bg-red-500">ADD TO CART</button></div>
+      </div>
+      <div>
+        <div class="relative w-30">
+          <img src="./images/product9.jpg" class="w-full" alt="No image">
+          <i class="fa-regular fa-heart text-red-500 text-xl absolute top-2 right-2 cursor-pointer"></i>
+        </div>
+        <div class="p-1 ml-3">GUYER ChAIR</div>
+        <div class="p-1 ml-3">Queen Headboard</div>
+        <div class="p-1 ml-3">
+          <span>$45.00</span><br>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+        </div>
+        <div><button class="w-full text-white bg-red-500">ADD TO CART</button></div>
+      </div>
+      <div>
+        <div class="relative w-30">
+          <img src="./images/product9.jpg" class="w-full" alt="No image">
+          <i class="fa-regular fa-heart text-red-500 text-xl absolute top-2 right-2 cursor-pointer"></i>
+        </div>
+        <div class="p-1 ml-3">GUYER ChAIR</div>
+        <div class="p-1 ml-3">Queen Headboard</div>
+        <div class="p-1 ml-3">
+          <span>$45.00</span><br>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+          <span style="color: gold;">&#9733;</span>
+        </div>
+        <div><button class="w-full text-white bg-red-500">ADD TO CART</button></div>
+      </div>
+    </div>
+    </div>
+
+    <hr>
+
+    <div class="grid grid-cols-4">
+      <div>
+        <div class="text-red-600">RAF<span class="text-black">CART</span></div>
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. minus omnis hic, dsjk assumenda?</div>
+        <div></div>
+      </div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    
+     
+</body>
+</html>
