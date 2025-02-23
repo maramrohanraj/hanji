@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="fname" id="fname" placeholder="Enter first name">
+    <button id="btn">Submit</button>
+    <script>
+        document.querySelector('#btn').addEventListener('click', async () => {
+            let fname = document.querySelector('#fname').value.trim()
+            try {
+                const response = await fetch(`http://localhost:8080/getData?fname=${fname}`)
+                console.log(response, typeof response)
+                console.log(response.url)
+
+                let data = await response.json();
+                console.log(data);
+            }
+            catch {
+                window.alert("SORRY")
+            }
+        })
+
+    </script>
+</body>
+
+</html>

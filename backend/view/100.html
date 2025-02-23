@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="uname" type="text" name="uname" placeholder="Enter your name">
+    <input id="add" type="text" name="add" placeholder="Enter your name">
+
+    <button id="btn">click me</button>
+
+    <script>
+        document.querySelector("#btn").addEventListener('click',async ()=>{
+            let uname = document.querySelector('#uname').value.trim();
+            let add =  document.querySelector('#add').value.trim();
+            let result=  await fetch(`http://localhost:8080/getData?uname=${uname}&add=${add}`);
+            console.log(100,result,typeof result);
+            let data =await result.json();
+            console.log(200,data,typeof data)
+
+        })
+    </script>
+</body>
+</html>

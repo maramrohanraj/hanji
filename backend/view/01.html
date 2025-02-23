@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="uname" id="uname" placeholder="Enter name">
+    <input type="text" name="id" id="id" placeholder="Enter id">
+    <button id="btn" type="submit">Submit</button>
+
+    <script>
+        document.querySelector("#btn").addEventListener('click',async ()=>{
+            console.log("hii")
+            let obj = {uname:document.querySelector('#uname').value.trim(),add: document.querySelector('#id').value.trim()}
+            let result=  await fetch(`http://localhost:5050/getData`,{
+                method:"POST",
+                headers:{'Content-Type':'text/plain' },
+                body:JSON.stringify(obj),
+            });
+            console.log(100,result,typeof result);
+            let data =await result.json();
+            console.log(200,data,typeof data)
+
+        })
+    </script>
+</body>
+</html>

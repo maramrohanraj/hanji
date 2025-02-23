@@ -1,0 +1,97 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        async function fetchData() {
+            const response = await fetch('http://localhost:8080/api/products.json')
+            console.log(response)
+            const data = await response.json();
+            console.log(data);
+        }
+        fetchData();
+    </script>
+</body>
+
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/search" method="get">
+        <input type="text" id="fname">
+        <input type="text" name="" id="lname">
+        <input type="submit">
+    </form>
+</body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="form">
+        <input type="text" id="fname">
+        <input type="text" name="" id="lname">
+        <input type="submit">
+    </form>
+    <script>
+        document.querySelector('#form').addEventListener('submit', async(e) => {
+            e.preventDefault();
+            const fname = document.querySelector('#fname').value.trim();
+            const lname = document.querySelector('#lname').value.trim();
+            const response =await fetch(`http://127.0.0.1:8080/search?fname=${fname}&lname=${lname}`)
+            const data = await response.json();
+            console.log(data);
+        })
+    </script>
+</body>
+
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <img src="./images/picture1.jpg" alt="">
+    <img src="./images/picture2.jpg" alt="">
+</body>
+
+</html>

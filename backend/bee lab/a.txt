@@ -1,0 +1,60 @@
+const express = require('express');
+const app = express();
+console.log(app);
+// node js folder structure creating node application
+// global execute outside the browser 
+// window is globally available object 
+// HTTP FILE SYSTEM PATH modules in nodejs.org
+
+
+
+
+
+
+
+
+we have multiple html,css and js pages
+we have to send information to client using end points if else if else
+without using if else by using url we want to send
+
+
+
+Node js is not a programming language it is a runtime environment for executing javascript code 
+
+
+
+
+
+
+
+core module(pre DEFINED module )(http,path,file system)
+1) file system module provides some operations to read,write,execute,append,rename,in folder read all files
+2) HTTP is a protocol it is used to send and receive data we will create a node server 
+3) Operating system module 
+4) PAth moduke if we read or write in file then we will use that path 
+
+
+./ ignore node module and check only  file is available or not 
+*)))FILE SYSTEM MODULE 
+mkdir and read directory
+
+
+
+
+
+
+
+built in module
+third party module (express,node)
+
+
+HOW TO CREATE USER DEFINED module
+react structure is called ECMAscript5(.mjs)
+node js structure is called common  js(.js){
+    require function is asynchronous in nature
+}
+
+
+
+
+for common js type if the file is not exported thne it will return empty object 

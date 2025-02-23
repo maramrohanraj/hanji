@@ -1,0 +1,23 @@
+what is os?
+Os is the system software that provides interface b/w user and a computer hardware and manages the resources of the system
+
+
+Context Switching in Operating Systems
+Definition:
+Context switching is the process of saving the state (context) of a currently running process so that it can be resumed later and then loading the state of another process to allow it to run.
+
+Example Scenario:
+A user edits a document, listens to music, and downloads a file simultaneously. The OS context switches between these tasks, allowing them to share CPU time.
+
+
+
+
+TurnAround time = exit time - arrival time
+waiting time = turnAround - burst time
+
+INDEXING
+
+
+
+
+

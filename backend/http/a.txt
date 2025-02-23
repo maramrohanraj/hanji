@@ -1,0 +1,37 @@
+we are assigned with dynamic IP address by ISP
+client requests the PC(our computer) server and it responds with response(client)
+
+the linkis established with application layer(int osi layer)
+
+receptor function will handle the requests
+
+
+
+
+
+
+get method : url->append
+
+post:  request object created
+
+google.com/search :? varname = value  (after ? called query string
+
+
+
+
+
+
+
+xepress is a framework
+
+ built on node js)
+
+
+ it will handle req,res kud
+
+ query string will be easily separatrd
+
+
+ no cors policy required to set headere
+
+ 

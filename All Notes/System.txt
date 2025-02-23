@@ -1,0 +1,469 @@
+Q)**** what is HLD
+
+It is a early stage design document that provides overview of system architecture
+It acts are blueprint
+Example: For an e-commerce app, HLD includes modules like User Service, Product Service, Order Service, and Database. It describes interactions among these services without detailing the code.
+Usage:
+HLD is used as a guide for developers and stakeholders to understand the system's structure, ensuring everyone aligns on the system’s architecture before moving to Low-Level Design (LLD) or actual coding.
+
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+Q)**** Functional vs Non functional Requirements
+
+1. Functional Requirements:
+Definition: Describe what the system should do, focusing on specific features or tasks.
+Example: For an e-commerce website, functional requirements would include user login, product search, adding items to the cart, and order checkout.
+Usage: These requirements guide the design and development of user-centric features.
+
+2. Non-Functional Requirements:
+Definition: Define how the system performs certain functions, focusing on qualities or constraints, such as speed, scalability, and security.
+Example: For the same e-commerce website, non-functional requirements could include the website’s response time (e.g., page loading in under 2 seconds), handling 10,000 concurrent users, and data encryption.
+Usage: These requirements ensure the system's reliability, usability, and performance, impacting user experience and system stability.
+Summary:
+
+Functional = "What the system does" (features)
+Non-Functional = "How the system performs" (qualities) performance,maintanance,usability
+
+
+
+
+-------------------------------------------------------------------------------------------------------------
+
+
+Q)** what is back of the envelope estimation
+
+IT is a quick rough calculation
+Purpose:
+To provide a basic estimate of system resources like storage, network bandwidth, or server capacity.
+Helps decide whether a design is practical or needs adjustment.
+Example:
+For designing a chat app, you might estimate daily messages per user, total storage needed for a year, and average bandwidth. If each message is 1 KB, and the app has 1 million users each sending 50 messages daily, storage can be roughly estimated as:
+
+1 KB × 50 × 1,000,000 × 365 = 18.25 TB
+Usage:
+Used to assess feasibility and guide initial design decisions without in-depth calculations.
+
+
+Numericals:
+
+1 TB = 1000 GB
+1 GB = 1000 MB
+1 MB = 1000 KB
+1 KB = 1000 bytes
+
+1)A social media platform expects 5 million daily active users, with each user uploading an average of 2 images per day. If each image is around 2 MB, estimate the storage required for image uploads in a month.
+
+sol: Daily Storage : 5,000,000 users * 2 images/user * 2MB/day = 20,000,000 MB = 20 TB 
+     Monthly Storage : 20 TB * 30 = 600 TB
+
+
+2) A system generates an average of 10 log entries per second, each entry being around 250 bytes. Estimate the total storage required to retain logs for 90 days.
+
+sol : per second storage : 10 entries * 250 bytes = 2500 bytes = 2.5 KB
+      Daily storage : 2.5KB * 86,400 seconds = 216,000 KB = 216 MB
+      storage for 90 days : 216 MB * 90 = 19,440 MB = 19.44 GB
+
+
+
+-------------------------------------------------------------------------------------------------------------
+
+Q)) What is platform technology 
+
+sol : It refers to an hardware or software in which an application is built and operates
+
+Components 
+
+Operating System (OS): The core software layer, like Windows, Linux, or macOS.
+
+Databases: The type of database used, such as MySQL, MongoDB, or PostgreSQL.
+
+Frameworks and Libraries: For instance, using Node.js or Django for backend, and React or Angular for frontend.
+
+Cloud Providers: If deployed on the cloud, the choice of provider like AWS, Azure, or Google Cloud Platform.
+
+Servers: The type of servers, such as web servers (Apache, Nginx) and application servers
+
+Example:
+For an e-commerce website:
+
+OS: Linux (for hosting).
+Database: MongoDB for scalable product data storage.
+Backend Framework: Express.js for handling requests.
+Frontend: React for building the user interface.
+Cloud Provider: AWS for scalability and global reach.
+
+-----------------------------------------------------------------------------------------------------------
+
+Q)** What is Architecture choice 
+
+
+It refers to the selection of the core structure or pattern of how system  components interacts
+
+Common Architecture Choices:
+	
+Monolithic Architecture:
+
+The entire application is built as a single, unified unit.
+Suitable for smaller applications that don’t require high scalability.
+
+Microservices Architecture:
+
+Application is divided into independent services, each handling specific functionality.
+Useful for large, complex systems that require high scalability and flexibility.
+
+Layered (n-Tier) Architecture:
+
+Divides the application into layers (e.g., presentation, business logic, data).
+Common for enterprise applications that benefit from separation of concerns.
+
+Event-Driven Architecture:
+
+Uses events to trigger communication between decoupled services.
+Suitable for applications that respond to real-time actions, like notifications.
+
+Example:
+For a ride-sharing app, microservices architecture might be chosen to separate services like User Management, Ride Matching, Payments, and Notifications, allowing each to scale independently.
+
+
+
+-------------------------------------------------------------------------------------------------------------
+
+
+QQ)** What is DAU(Daily Active Users)
+
+Purpose of DAU in HLD:
+
+Capacity Planning: Helps in estimating the infrastructure needed to support user traffic without performance issues.
+
+Scalability: Assists in determining if the architecture can handle peak user loads and how it will scale as DAU increases.
+
+Cost Estimation: Gives an idea of operational costs, like server usage, database queries, and bandwidth, based on daily usage.
+
+Reliability Planning: Ensures the system is designed for high availability and load management to meet user demands.
+
+Example:
+If a social media platform expects a DAU of 1 million, the HLD might include provisions for load balancing, caching, and distributed databases to handle the high traffic reliably.
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+Q)*** What is LLD
+
+It is the detailed design that follows HLD in software development
+
+Key Characteristics of LLD:
+
+Detailed Components:
+
+Specifies the internal workings of each component identified in the HLD.
+Includes classes, methods, and data structures.
+
+Interface Design:
+
+Describes APIs and communication protocols between components.
+Defines how modules will interact, including input and output formats.
+
+Database Design:
+
+Details the schema for databases, including tables, fields, relationships, and constraints.
+
+Error Handling:
+
+Specifies how the system will handle various error scenarios and exceptions.
+
+Algorithms and Logic:
+
+Provides pseudocode or flowcharts that outline the algorithms used for specific functions.
+
+Example:
+For a ride-sharing application:
+
+HLD may describe user management, ride matching, and payment processing as high-level components.
+
+LLD would specify:
+Classes for User, Ride, and Payment.
+Methods like createUser(), findRide(), and processPayment().
+Database tables for Users, Rides, and Transactions, including their attributes.
+
+Usage:
+LLD is crucial for developers as it serves as a blueprint for coding, ensuring that all details are accounted for before implementation begins.
+
+-------------------------------------------------------------------------------------------------------------
+
+Q)) what are structural and behaviorial components
+
+
+
+1. Structural Components:
+Structural components define the organization and arrangement of data within the system. They describe how different parts of the system are composed and how they interact.
+
+Key Features:
+Classes and Objects: Defines the classes, their properties (attributes), and the objects created from them.
+Data Structures: Specifies arrays, lists, trees, graphs, or any other data structure used to store data.
+Database Schemas: Details tables, fields, relationships, and constraints in a database.
+Modules and Packages: Groups related classes and functions into modules or packages for better organization.
+
+Example:
+In an e-commerce application, structural components might include:
+
+Class Definitions:
+User, Product, Order classes with relevant attributes.
+
+Database Tables:
+Tables for Users, Products, Orders with their respective fields.
+
+
+2. Behavioral Components:
+
+Behavioral components define how the system behaves and responds to various inputs and events. They specify the actions that the system can perform and the interactions between components.
+
+Key Features:
+Methods and Functions: Details the functions or methods within classes and how they interact.
+State Transitions: Defines how an object’s state changes in response to events or actions.
+Use Case Scenarios: Describes specific interactions that users or systems can have with the application.
+Control Flow: Details the flow of control within the system, including conditional statements, loops, and event handling.
+
+Example:
+In the same e-commerce application, behavioral components might include:
+
+Methods:
+addToCart(), checkout(), processPayment() within the respective classes.
+State Changes:
+Changing the status of an order from "Pending" to "Shipped."
+User Interaction:
+Describing how a user interacts with the shopping cart, such as adding or removing items.
+
+
+Summary:
+Structural Components focus on the "what" of the system (data and structure).
+Behavioral Components focus on the "how" (actions and interactions).
+
+
+
+---------------------------------------------------------------------------------------------------------
+
+
+
+Q)) What is activity diagram 
+
+Activity Diagram
+
+An Activity Diagram is a UML diagram that represents the flow of control or data in a system. It visually illustrates activities, actions, decision points, and workflows, making it useful for modeling business processes and use cases.
+
+Key Elements:
+
+Activities: Rounded rectangles showing tasks.
+Transitions: Arrows indicating flow between activities.
+Decision Points: Diamonds representing branching based on conditions.
+Start/End Nodes: Filled circle for start, hollow circle with outer ring for end.
+Swimlanes: Divisions for different actors or components.
+
+
+Example: Online Shopping Process
+Start Shopping
+Browse Products
+Add to Cart
+Checkout
+Payment
+Order Confirmed
+End
+
+
+-----------------------------------------------------------------------------------------------------------
+
+Q) ** What is sequence diagram 
+     
+A Sequence Diagram is a UML diagram that shows how objects interact in a system over time. It illustrates the order of messages exchanged between objects during a specific scenario, focusing on the flow of control.
+
+
+Key Features:
+Lifelines: Vertical dashed lines representing the lifespan of objects.
+Activation Boxes: Indicate when an object is active.
+Messages: Arrows showing communication between objects.
+Return Messages: Dashed arrows indicating method return.
+
+
+Example: User Login Process
+
+
+  User        LoginController       UserService       Database
+   |                |                   |                 |
+   |----login()---->|                   |                 |
+   |                |----authenticate()--->|             |
+   |                |                   |--checkUser()--->|
+   |                |                   |<--UserData------|
+   |                |<---authResponse---|                 |
+   |<---loginResult---|                 |                 |
+
+
+
+
+Explanation:
+User initiates the login process.
+LoginController handles login logic and interacts with UserService.
+UserService verifies credentials by querying the Database.
+The process concludes with the LoginController returning the login result to the user.
+
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+
+Q) What is class diagram
+
+sol : Refer class diagram for college mangement system in GFG and notes
+
+
+-------------------------------------------------------------------------------------------------------------
+
+
+
+Q) What is Aggregation,association,composition,generalization,dependency and multiplicity
+
+sol: refer GFG and notes
+
+
+
+-------------------------------------------------------------------------------------------------------------
+
+SINGLE RESPONSIBILITY PRINCIPLE : A class should have only one reason to change
+
+open closed principle : it is open for extension like when we give interface shape and we can add shapes restangles,area extend 
+
+
+LISKOV substitution : Child classes can replace their parent classes without breaking the application
+eg : if derived class override base class then this principle is violated
+
+
+INterface segragation     : it ocuses on creating interfaces that are specific to client requirements
+ Classes should depend only on interfaces they use
+
+
+
+dependecny incersion : Both high-level and low-level modules should depend on abstractions
+ 	
+
+
+-------------------------------------------------------------------------------------------------------------
+
+INTRODUCTION TO DBMS and RBMS
+
+
+Feature	        DBMS	                        RDBMS
+Structure	Unstructured or structured	Structured (tables)
+Relationships	May not enforce relationships	Uses keys to enforce relationships
+Normalization	Not always supported	        Supports normalization
+Data Integrity	Limited	                        Ensures integrity through constraints
+
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+Feature	                SQL (Relational Database)	  NoSQL (Non-Relational Database)
+Structure	        Table-based (rows & columns)	  Flexible (documents, key-value, graphs, etc.)
+Schema	                Fixed schema (strict)	          Dynamic schema (flexible)
+Data Relationships	Supports complex relationships	  Limited relationships
+Scalability	        Vertical (scaling up)	          Horizontal (scaling out)
+Examples	        MySQL, PostgreSQL, Oracle	  MongoDB, Cassandra, Redis, Neo4j
+Best For	        Structured data and transactions  Unstructured or semi-structured data
+
+
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+
+
+Feature	                Clustered Index	                Non-Clustered Index
+Physical Ordering	Orders data physically	        Does not alter physical data order
+Search Type	        Optimized for Binary Search	Usually requires Linear Search
+Example	                student_id in Students	        name in Students (points to rows)
+Max per Table	        One	                        Multiple
+
+
+
+
+--------------------------------------------------------------------------------------------------------------
+
+Q) What is proxy server 
+
+The server b/w PC and internet is called Proxy server
+
+If we request gamingbeasts.com then proxy server will know which websites are blocked and it will return 
+Website blocked. Example of proxy server is chitkara wifi which works on client side and server dont know about it 
+
+
+-------------------------------------------------------------------------------------------------------------
+
+Q) What is reverse proxy server
+
+This works on the server side
+
+This server is b/w internet and server
+
+The server have two ports 3000 and 3001 and two domains example1.com and example2.com then how server knows to run on which port then we will use reverse proxy server 
+
+--------------------------------------------------------------------------------------------------------------
+
+Q) Vertical vs Horizontal Scaling
+
+
+If users are increasing then we are increasing resources this is vertical scaling 
+Ex: In java because it is multi threaded
+
+As node js is single threaded if we provide resources also it will take single at a time so we use horizontal scaling 
+
+In horizontal scaling
+
+Here we will have load balancer instead of giving 4 resources to one node js application we will have load server where we will have 4 server and 4 resources 1 per each
+Ex: For node js horizontal scaling is best
+
+
+--------------------------------------------------------------------------------------------------------------
+
+Q) What are name servers?
+
+
+Converting the domain name to the IP address is called name server or practically called DNS server.
+
+
+
+--------------------------------------------------------------------------------------------------------------
+
+Q) What are DNS records?
+
+DNS server runs through the DNS records
+
+Two types of records
+
+A Record : domain to IP address
+
+CNAME Record : domain to domain 
+
+What is multithreading
+what is critical section
+what is race condition
+detect cycle in deadlock cycle detection in directed graph
+** implement your own LRU cash
+if /home endpoint is hit then also empty session will create
+regarding JWT
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
